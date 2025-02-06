@@ -1,0 +1,8 @@
+packages:
+  - package: dbt-labs/codegen
+    version: 0.12.1
+  - package: dbt-labs/dbt_project_evaluator
+    version: 1.0.0
+  - package: dbt-labs/dbt_utils
+    version: 1.3.0
+sha1_hash: 80d5f5c1caff6e3948dfa77b80c9c3138a7d052e
