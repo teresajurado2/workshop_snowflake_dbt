@@ -47,7 +47,7 @@ models:
   - name: stg_tpch__lineitem
     config:
       query_tag: sales
-      tag: sales
+      tags: sales
     description: ""
     columns:
       - name: l_orderkey
@@ -65,7 +65,7 @@ models:
     description: ""
     config:
       query_tag: operations
-      tag: operations
+      tags: operations
     columns:
       - name: n_nationkey
         data_type: number
@@ -90,7 +90,7 @@ models:
     description: ""
     config:
       query_tag: sales
-      tag: sales
+      tags: sales
     columns:
       - name: o_orderkey
         data_type: number
@@ -135,7 +135,7 @@ models:
     description: ""
     config:
       query_tag: operations
-      tag: operations
+      tags: operations
     columns:
       - name: p_partkey
         data_type: number
@@ -180,7 +180,7 @@ models:
     description: ""
     config:
       query_tag: operations
-      tag: operations
+      tags: operations
     columns:
       - name: ps_partkey
         data_type: number
@@ -209,7 +209,7 @@ models:
     description: ""
     config:
       query_tag: operations
-      tag: operations
+      tags: operations
     columns:
       - name: r_regionkey
         data_type: number
@@ -230,7 +230,7 @@ models:
     description: ""
     config:
       query_tag: operations
-      tag: operations
+      tags: operations
     columns:
       - name: s_suppkey
         data_type: number
