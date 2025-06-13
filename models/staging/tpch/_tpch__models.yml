@@ -2,7 +2,12 @@ version: 2
 
 models:
   - name: stg_tpch__customer
+
     description: ""
+    config:
+      query_tag: customer
+      tags: customer
+
     columns:
       - name: c_custkey
         data_type: number
@@ -40,6 +45,9 @@ models:
         data_type: timestamp
 
   - name: stg_tpch__lineitem
+    config:
+      query_tag: sales
+      tag: sales
     description: ""
     columns:
       - name: l_orderkey
@@ -55,6 +63,9 @@ models:
 
   - name: stg_tpch__nation
     description: ""
+    config:
+      query_tag: operations
+      tag: operations
     columns:
       - name: n_nationkey
         data_type: number
@@ -77,6 +88,9 @@ models:
 
   - name: stg_tpch__orders
     description: ""
+    config:
+      query_tag: sales
+      tag: sales
     columns:
       - name: o_orderkey
         data_type: number
@@ -119,6 +133,9 @@ models:
 
   - name: stg_tpch__part
     description: ""
+    config:
+      query_tag: operations
+      tag: operations
     columns:
       - name: p_partkey
         data_type: number
@@ -161,6 +178,9 @@ models:
 
   - name: stg_tpch__partsupp
     description: ""
+    config:
+      query_tag: operations
+      tag: operations
     columns:
       - name: ps_partkey
         data_type: number
@@ -187,6 +207,9 @@ models:
 
   - name: stg_tpch__region
     description: ""
+    config:
+      query_tag: operations
+      tag: operations
     columns:
       - name: r_regionkey
         data_type: number
@@ -205,6 +228,9 @@ models:
 
   - name: stg_tpch__supplier
     description: ""
+    config:
+      query_tag: operations
+      tag: operations
     columns:
       - name: s_suppkey
         data_type: number

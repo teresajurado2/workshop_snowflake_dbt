@@ -8,6 +8,7 @@ source as (
 
 renamed as (
 
+    select
         n_nationkey,
         n_name,
         n_regionkey,

@@ -2,12 +2,7 @@ version: 2
 
 sources:
   - name: tpch
-    database: DEV_BRONZE_DB
-    schema: TPCH
-    freshness:
-      warn_after: {count: 12, period: hour}
-      error_after: {count: 24, period: hour}
-    loaded_at_field: ingest_timestamp
+    schema: tpch_sf1
     tables:
       - name: customer
         columns:
@@ -28,7 +23,7 @@ sources:
           - name: c_comment
             data_type: varchar
           - name: ingest_timestamp
-            data_type: timestamp
+            data_type: timestamp_ltz
 
       - name: lineitem
         columns:
@@ -65,7 +60,7 @@ sources:
           - name: l_comment
             data_type: varchar
           - name: ingest_timestamp
-            data_type: timestamp
+            data_type: timestamp_ltz
 
       - name: nation
         columns:
@@ -78,7 +73,7 @@ sources:
           - name: n_comment
             data_type: varchar
           - name: ingest_timestamp
-            data_type: timestamp
+            data_type: timestamp_ltz
 
       - name: orders
         columns:
@@ -101,7 +96,7 @@ sources:
           - name: o_comment
             data_type: varchar
           - name: ingest_timestamp
-            data_type: timestamp
+            data_type: timestamp_ltz
 
       - name: part
         columns:
@@ -124,7 +119,7 @@ sources:
           - name: p_comment
             data_type: varchar
           - name: ingest_timestamp
-            data_type: timestamp
+            data_type: timestamp_ltz
 
       - name: partsupp
         columns:
@@ -139,7 +134,7 @@ sources:
           - name: ps_comment
             data_type: varchar
           - name: ingest_timestamp
-            data_type: timestamp
+            data_type: timestamp_ltz
 
       - name: region
         columns:
@@ -150,7 +145,7 @@ sources:
           - name: r_comment
             data_type: varchar
           - name: ingest_timestamp
-            data_type: timestamp
+            data_type: timestamp_ltz
 
       - name: supplier
         columns:
@@ -169,4 +164,4 @@ sources:
           - name: s_comment
             data_type: varchar
           - name: ingest_timestamp
-            data_type: timestamp
+            data_type: timestamp_ltz
